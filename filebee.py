@@ -17,6 +17,24 @@ class FileBeeeeee:
 
     def print_day(self, date):
         lines = self.line_list()
+        date_formated = 'dddd' + self.date_dis(date)
+        day_start = -1
+        for index, line in enumerate(lines):
+            if date_formated in line:
+                day_start = index
+        if day_start == -1:
+            print('Date not found')
+        else:
+            print(date)
+            counter = 1
+            for line in lines[day_start+1:]:
+                if 'dddd' in line:
+                    break
+                print(f'{counter}. {line}')
+                counter+=1
+
+
+
 
 
 

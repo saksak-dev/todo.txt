@@ -40,3 +40,5 @@ class FileBeeeeee:
 
 
 
+    def finish_task(self, index, date):
+        lines=line.list()

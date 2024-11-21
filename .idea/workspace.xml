@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62fec57a-4cec-431a-8acd-c53df6c1d4c9" name="Changes" comment="inital">
+    <list default="true" id="62fec57a-4cec-431a-8acd-c53df6c1d4c9" name="Changes" comment="file bee starting out">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filebee.py" beforeDir="false" afterPath="$PROJECT_DIR$/filebee.py" afterDir="false" />
     </list>
@@ -34,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/ognjen/Dev/PycharmProjects/brojac&quot;,
@@ -64,11 +65,44 @@
       <option name="project" value="LOCAL" />
       <updated>1731150535310</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inital">
+      <option name="closed" value="true" />
+      <created>1732175933913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732175933913</updated>
+    </task>
+    <task id="LOCAL-00003" summary="file bee starting out">
+      <option name="closed" value="true" />
+      <created>1732177770272</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732177770272</updated>
+    </task>
+    <task id="LOCAL-00004" summary="file bee starting out">
+      <option name="closed" value="true" />
+      <created>1732179419263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732179419263</updated>
+    </task>
+    <task id="LOCAL-00005" summary="file bee starting out">
+      <option name="closed" value="true" />
+      <created>1732179916225</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732179916225</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital" />
+    <MESSAGE value="file bee starting out" />
+    <option name="LAST_COMMIT_MESSAGE" value="file bee starting out" />
   </component>
 </project>

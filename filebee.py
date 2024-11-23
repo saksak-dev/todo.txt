@@ -12,4 +12,6 @@ class FileBeeeeee:
             writer.writelines(lines)
 
 
+    def add_task(self, task):
+
 

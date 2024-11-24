@@ -28,6 +28,7 @@ class FileBeeeeee:
 
 
     def add_task(self, task, index=None):
+        """ Adds task to specified index, if no index specified it adds it to the end of uncompleted tasks """
         in_progress, done = self.split_done()
 
         if index is None or index > len(in_progress) or index <= 0:

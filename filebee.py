@@ -1,4 +1,7 @@
 from datetime import datetime
+from os import linesep
+
+
 class FileBeeeeee:
     def __init__(self, name):
         self.filename = name
@@ -27,18 +30,40 @@ class FileBeeeeee:
             writer.writelines(lines)
 
 
-    def add_task(self, task, index=None):
+    def add_task(self, task: str, index=None):
         """ Adds task to specified index, if no index specified it adds it to the end of uncompleted tasks """
         in_progress, done = self.split_done()
 
-        if index is None or index > len(in_progress) or index <= 0:
+        if  index is None or index >= len(in_progress) or index < 0:
             in_progress.append(task)
         else:
-            in_progress.insert(index-1, task)
+            in_progress.insert(index, task)
 
         lines = in_progress + done
 
         self.write_to_doc(lines)
+
+    def finish_task(self, index):
+        """Moves task from in_progress to done before merging and adds done to the task"""
+
+        in_progress, done = self.split_done()
+
+        if index >= len(in_progress) or index < 0:
+            print("Task does not exist")
+        else:
+            finished_task = in_progress.pop(index).strip()+' [done]\n'
+            done.append(finished_task)
+            lines = in_progress + done
+            self.write_to_doc(lines)
+
+
+    def clear_done(self):
+        '''Clears all finished task from the document leaving only'''
+
+        in_progress, done = self.split_done()
+        self.write_to_doc(in_progress)
+        print("Completed tasks have been cleared.")
+
 
 
 

@@ -33,7 +33,7 @@ class FileBeeeeee:
     def add_task(self, task: str, index=None):
         """ Adds task to specified index, if no index specified it adds it to the end of uncompleted tasks """
         in_progress, done = self.split_done()
-
+        task = task + '\n'
         if  index is None or index >= len(in_progress) or index < 0:
             in_progress.append(task)
         else:
@@ -55,7 +55,7 @@ class FileBeeeeee:
             done.append(finished_task)
             lines = in_progress + done
             self.write_to_doc(lines)
-
+            self.list_tasks()
 
     def clear_done(self):
         '''Clears all finished task from the document leaving only'''
@@ -65,6 +65,13 @@ class FileBeeeeee:
         print("Completed tasks have been cleared.")
 
 
+    def list_tasks(self):
+        in_progress, done = self.split_done()
+
+        for index, task in enumerate(in_progress):
+            print(f'{index + 1}. {task.strip()}')
+        for task in done:
+            print(task.strip())
 
 
 

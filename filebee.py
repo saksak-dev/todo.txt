@@ -28,7 +28,7 @@ class FileBeeeeee:
     def write_to_doc(self, lines):
         with open(self.filename, 'w') as writer:
             writer.writelines(lines)
-
+            self.list_tasks()
 
     def add_task(self, task: str, index=None):
         """ Adds task to specified index, if no index specified it adds it to the end of uncompleted tasks """
@@ -50,12 +50,12 @@ class FileBeeeeee:
 
         if index >= len(in_progress) or index < 0:
             print("Task does not exist")
+            self.list_tasks()
         else:
             finished_task = in_progress.pop(index).strip()+' [done]\n'
             done.append(finished_task)
             lines = in_progress + done
             self.write_to_doc(lines)
-            self.list_tasks()
 
     def clear_done(self):
         '''Clears all finished task from the document leaving only'''

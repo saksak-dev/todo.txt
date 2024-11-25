@@ -32,7 +32,6 @@ def get_file_location():
 def main():
     # Create ArgumentParser object
     parser = argparse.ArgumentParser(description="Process some arguments.")
-    #TODO find better way to handle file location and name
     file_handler = filebee.FileBeeeeee(get_file_location())
 
     parser.add_argument('-ls', '--list', action='store_true', help="List all tasks")

@@ -23,7 +23,7 @@ def get_file_location():
             return os.path.join(saved_dir, DEFAULT_FILE_NAME)
 
     # Prompt user for directory if not found
-    directory = input("Enter directory to store tasks file (e.g., /home/user/documents): ").strip()
+    directory = input("Enter directory to store tasks file: ").strip()
     with open(CONFIG_FILE, 'w') as f:
         json.dump({"file_directory": directory}, f)
     return os.path.join(directory, DEFAULT_FILE_NAME)

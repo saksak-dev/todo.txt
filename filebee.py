@@ -1,7 +1,3 @@
-from datetime import datetime
-from os import linesep
-
-
 class FileBeeeeee:
     def __init__(self, name):
         self.filename = name
